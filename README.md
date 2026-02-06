@@ -1,5 +1,24 @@
 # Qwen3-ASR
 
+> **VoxAI Fork** -- This fork adds tooling for domain-specific fine-tuning and evaluation of Qwen3-ASR.
+>
+> **Added scripts:**
+> | Script | Purpose |
+> |---|---|
+> | `prepare_datasets.py` | Download and prepare HuggingFace WebDataset repos as JSONL for fine-tuning |
+> | `finetuning/train.sh` | Launch single/dual-GPU SFT training |
+> | `evaluate.py` | Evaluate models on [VoxAI/bk-pl-dataforce-phase1](https://huggingface.co/datasets/VoxAI/bk-pl-dataforce-phase1) (WER/CER) |
+>
+> **Fine-tuned model:** [VoxAI/qwen-asr-pl-de](https://huggingface.co/VoxAI/qwen-asr-pl-de) -- trained on Polish + German drive-thru data (3 epochs, full-parameter SFT).
+>
+> **Evaluation results on Polish drive-thru data (mic channel, 440 utterances):**
+> | Model | WER | CER |
+> |---|---|---|
+> | Qwen/Qwen3-ASR-1.7B (baseline) | 50.62% | 33.49% |
+> | VoxAI/qwen-asr-pl-de (fine-tuned) | **28.22%** | **18.65%** |
+
+---
+
 <br>
 
 <p align="center">
