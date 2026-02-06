@@ -1,0 +1,18 @@
+[
+  {
+    "label": "No context",
+    "wer": 0.5062344139650873,
+    "cer": 0.334867663981588,
+    "num_samples": 440,
+    "total_audio_sec": 2271.2070624999983,
+    "context_used": false
+  },
+  {
+    "label": "With menu context",
+    "wer": 1.3548272176701104,
+    "cer": 1.4359981046503756,
+    "num_samples": 440,
+    "total_audio_sec": 2271.2070624999983,
+    "context_used": true
+  }
+]
